@@ -151,7 +151,7 @@ body {
 
 }
 
-.btn-contact-us:hover {
+.btn-contact-us:hover, .btn-info-here:hover{
     color: white; /* Cambia el color del texto a blanco en hover */
     background: linear-gradient(90deg, #253785 21.87%, #1892D1 100%);
 }
@@ -190,7 +190,6 @@ body {
   height: 55vh; /* Altura del contenedor */
   align-items: center; /* Centrar los elementos horizontalmente */
   text-align: center; /* Centrar el texto horizontalmente */
- 
 }
 
 .categoriesCarrousel p {
@@ -234,9 +233,57 @@ body {
 .slick-prev, .slick-next {
   margin: 10px; 
   margin-top: 20%;
-  transform: none;    /* Eliminar transformación de alineación vertical */
+  transform: none;  
 }
-/* Contenedor del carrusel para centrar los botones */
 .slider {
-  text-align: center; /* Centra los botones debajo del carrusel */
+  text-align: center; 
+}
+
+.options{
+  background: url('../assets/shutterstock_2070783284.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 5%;
+}
+.title-options-p{
+  font-size: 1.5rem;
+}
+.title-options{
+  font-family: SancoaleSoftened;
+}
+.cont-description{
+  border-left: 4px solid #253785;
+}
+
+.cont-description p{
+  font-size: 1.3rem;
+}
+
+.title-areas{
+  margin-top: 8%;
+  margin-bottom: 10%;
+}
+
+.tp-col{
+  font-size: 1.3rem;
+}
+
+.btn-info-here{
+  margin-top: 5%;
+    border: 3px solid transparent; /* Borde transparente inicialmente */
+    background-color: white; /* Fondo blanco */
+    background-image: linear-gradient(to right, #253785, #253785, #1892D1, #1892D1); /* Gradiente en el borde */
+    border: 1px solid #1892D1;
+    padding: 0px 65px;
+    text-align: center;
+    color: transparent; /* Texto transparente */
+    font-size: 1.30rem;
+    margin-bottom: 5%;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-background-clip: text; /* Gradiente aplicado al texto */
+    -webkit-background-clip:border; /* Gradiente aplicado al texto */
+
+    background-clip: text; /* Gradiente aplicado al texto */
 }
