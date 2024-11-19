@@ -9,5 +9,7 @@ Clonar el repositorio mediante el comando en git: git clone origin : https://git
 ```bash
 git clone https://github.com/usuario/nombre-del-repo.git
 ```
+o descargarlo en zip dandole click a el boton <> Code, Download ZIP
+
 2-Abrir index.html
 
