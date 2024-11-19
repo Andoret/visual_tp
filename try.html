@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel Slick</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <style>
+    body {
+      background-color: #3498db;
+      color: #fff;
+    }
+    .content {
+      margin: auto;
+      padding: 20px;
+      width: 600px;
+    }
+    h3 {
+      background: #fff;
+      color: #3498db;
+      font-size: 36px;
+      line-height: 100px;
+      margin: 10px;
+      padding: 2%;
+      position: relative;
+      text-align: center;
+    }
+    .slick-next,
+    .slick-prev {
+      z-index: 10;
+    }
+    .slick-slide {
+      display: none;
+      float: left;
+      height: 100%;
+      min-height: 1px;
+    }
+    .slick-initialized .slick-slide {
+      display: block;
+    }
+    .slick-list {
+      overflow: visible;
+    }
+    .slick-slide {
+      opacity: 0;
+      transition: .6s;
+    }
+    .slick-active {
+      opacity: 1;
+    }
+    .slick-cloned {
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="slider multiple-items">
+      <div><h3>1</h3></div>
+      <div><h3>2</h3></div>
+      <div><h3>3</h3></div>
+      <div><h3>4</h3></div>
+      <div><h3>5</h3></div>
+      <div><h3>6</h3></div>
+      <div><h3>7</h3></div>
+      <div><h3>8</h3></div>
+      <div><h3>9</h3></div>
+      <div><h3>10</h3></div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      var itemNum = $('.multiple-items div').length - 1;
+      console.log(itemNum);
+
+      $('.multiple-items').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+      });
+
+      $('.multiple-items').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        if (nextSlide === 0) {
+          $('.slick-cloned').slice(3, 6).css({
+            'opacity': 1
+          });
+        } else if (nextSlide === itemNum) {
+          $('.slick-cloned').filter(':lt(3)').css({
+            'opacity': 1
+          });
+        }
+      });
+
+      $('.multiple-items').on('afterChange', function(event, slick, currentSlide) {
+        $('.slick-cloned').css({
+          'opacity': 0
+        });
+      });
+    });
+  </script>
+</body>
+</html>

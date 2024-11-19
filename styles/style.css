@@ -1,0 +1,242 @@
+/* Importar la fuente desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face{
+    font-family: SancoaleSoftened;
+    src: url('../assets/fonts/Sancoale_Softened_Medium.ttf')
+  }
+
+:root {
+    --color-stop-1: #253785; /* Color para el primer stop */
+    --color-stop-2: #1892D1; /* Color para el segundo stop */
+  }
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+.nav-main{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Para que esté encima de otros elementos */
+}
+
+.datenav{
+    font-size: 0.75rem;
+    color:rgb(227, 230, 233);
+    font-family: 'Noto Sans', sans-serif;
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+.logos{
+    width: 55%;
+    margin-top: 0%;
+    margin: 10%;
+}
+
+.btn-contact{
+    background: linear-gradient(90deg, #253785 21.87%, #1892D1 100%);
+    color: white;
+    border: none;
+    padding: 0px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.6rem;
+    margin: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.navlink{
+    color: #272727;
+    text-decoration: none;
+    font-size: 0.80rem;
+    font-weight: 500;
+}
+
+.navlink:hover{
+    color: black;
+    border-bottom: 1px solid black; /* Simular subrayado */
+    padding-bottom: 3px; /* Crear un margen entre el texto y el "subrayado" */
+
+}
+
+.nav-banner{
+    padding-left: 35px;
+    padding-right: 15px;
+    font-size: 1.2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 12px;
+}
+
+
+
+.ul-banner{
+    padding-left: 35px;
+    padding-right: 15px;
+    padding: 1.4%;
+    padding-bottom: 1.5%;
+    margin-bottom: 8%;
+    margin-left: 17%;
+    margin-right: 17%;
+    
+
+}
+.ul-banner li button{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+
+}
+
+.is-active{
+    font-weight: bolder;
+    background: linear-gradient(to right, #253785, #253785,#1892D1, #1892D1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:text;
+}
+
+
+.about{
+    margin-top: 5%;
+}
+
+.who-we-are{
+    font-size: 1.1rem;
+    color: #272727;
+}
+.sancoale{
+    font-family: SancoaleSoftened;
+    background: linear-gradient(to right, #253785, #253785,#1892D1, #1892D1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip:text;
+}
+
+.noto-sans{
+    font-family: 'Noto Sans';
+}
+
+.p-who-we-are{
+    margin-top: 4%;
+    font-size: 1.25rem;
+    color: #272727;
+}
+.btn-contact-us {
+    margin-top: 1%;
+    border: 3px solid transparent; /* Borde transparente inicialmente */
+    background-color: white; /* Fondo blanco */
+    background-image: linear-gradient(to right, #253785, #253785, #1892D1, #1892D1); /* Gradiente en el borde */
+    border: 1px solid #1892D1;
+    padding: 0px 65px;
+    text-align: center;
+    color: transparent; /* Texto transparente */
+    font-size: 1.30rem;
+    margin-bottom: 5%;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    -webkit-background-clip: text; /* Gradiente aplicado al texto */
+    -webkit-background-clip:border; /* Gradiente aplicado al texto */
+
+    background-clip: text; /* Gradiente aplicado al texto */
+}
+.icon-carrousel{
+ color: #007BFF;
+
+}
+
+.btn-contact-us:hover {
+    color: white; /* Cambia el color del texto a blanco en hover */
+    background: linear-gradient(90deg, #253785 21.87%, #1892D1 100%);
+}
+
+
+.solutions-title{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+.subtitle-card{
+    margin-bottom: 30% !important;
+    margin-top: 10%;
+}
+
+.services{
+    margin-top: 8%;
+}
+
+.content {
+  padding: 30px 10px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.categories {
+  border-radius: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 15px;
+  margin-bottom:15px;
+
+}
+.categoriesCarrousel{
+  height: 55vh; /* Altura del contenedor */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  text-align: center; /* Centrar el texto horizontalmente */
+ 
+}
+
+.categoriesCarrousel p {
+  align-self: center; 
+  margin-top: 25%;
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  color: black;
+}
+
+.title-categories{
+  height: 50px;
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+}
+.title-categories h3{
+  font-size: 1.3rem !important;
+  margin-bottom: 10px;
+  font-weight: 400;
+  margin-top: 15px;
+  padding: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.categories p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.slick-slide {
+  padding: 10px;
+}
+
+.slick-prev, .slick-next {
+  color: #333 !important;
+  font-size: 24px !important;
+}
+.slick-prev, .slick-next {
+  margin: 10px; 
+  margin-top: 20%;
+  transform: none;    /* Eliminar transformación de alineación vertical */
+}
+/* Contenedor del carrusel para centrar los botones */
+.slider {
+  text-align: center; /* Centra los botones debajo del carrusel */
+}
